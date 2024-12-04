@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}add_data page{% endblock %}
+{% block content %}
+<form method="POST" action="/submit">
+
+
+    <label for="age">Person age:</label>
+    <input type="text" id="age" name="age" required><br>
+
+    <label for="gender">gender :</label>
+    <input type="text" id="gender" name="gender" required><br>
+
+    <label for="UserBehaviorClass">UserBehaviorClass:</label>
+     <input type="text" id="UserBehaviorClass" name="UserBehaviorClass" required><br>
+
+
+
+
+
+
+
+    <label for="DeviceModel" class="form-label">Device Model :</label>
+    <input type="text" id="DeviceModel" name="DeviceModel" required><br>
+
+    <label for="OperatingSystem">Operating System :</label>
+    <input type="text" id="OperatingSystem" name="OperatingSystem" required><br>
+
+    <label for="AppusageTime"> App Usage Time :</label>
+    <input type="text" id="AppusageTime" name="AppusageTime" required><br>
+
+    <label for="BatteryDrain"> Battery Drain:</label>
+    <input type="text" id="BatteryDrain" name="BatteryDrain" required><br>
+
+    <label for="ScreenOnTime_hours_per_day"> Screen On Time:</label>
+    <input type="text" id="ScreenOnTime_hours_per_day" name="ScreenOnTime_hours_per_day" required><br>
+
+    <label for="NumberofAppsInstalled"> Number of Apps Installed:</label>
+    <input type="text" id="NumberofAppsInstalled" name="NumberofAppsInstalled" required><br>
+
+    <label for="DataUsage_MB_per_day"> Screen On Time:</label>
+    <input type="text" id="DataUsage_MB_per_day" name="DataUsage_MB_per_day" required><br>
+
+
+
+
+
+                    <input type="submit" value="Submit">
+</form>
+{% endblock %}
